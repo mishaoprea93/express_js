@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+</head>
+
+<body>
+    <div class="result">
+        <form id="submitt" action="/process" method="POST">
+            <p>Your Name <input type="text" name="Name" /></p>
+            <p>Dojo Location:
+                <SELECT NAME="Location">
+                            <OPTION VALUE="Seattle" SELECTED>Seattle
+                            <OPTION VALUE="Chicago">Chicago
+                            <OPTION VALUE="Dallas">Dallas
+                            <OPTION VALUE="San Jose">San Jose
+                        </SELECT>
+            </p>
+            <p>Favorite Language:
+                <SELECT NAME="Language">
+                                <OPTION VALUE="Python" SELECTED>python
+                                <OPTION VALUE="JavaScript">JavaScript
+                            </SELECT>
+            </p>
+            <p>Comment(optional)</p><input id="comment" type="text" name="Comment" />
+            <p><input id="button" type="submit" value="Submit Your Info" /></p>
+        </form>
+    </div>
+</body>
+
+</html>
+
+
+
+<style>
+    #comment {
+        width: 300px;
+        height: 100px;
+    }
+    
+    .result {
+        border: 1px solid black;
+        height: 400px;
+        width: 400px;
+        margin: 50px auto;
+    }
+    
+    #submitt {
+        margin-left: 20px;
+    }
+    
+    #button {
+        display: inline-block;
+        margin-right: 20px;
+        background-color: lightblue;
+        box-shadow: 2px 1px 1px grey;
+    }
+</style>

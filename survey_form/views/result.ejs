@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="result1">
+        <h4>Thanks for submitting this form!You have submitted this form 0 times now!</h4>
+        <p>Name:
+            <%=form_data.name %>
+
+        </p>
+        <p>Location:
+            <%=form_data.location %>
+
+        </p>
+        <p>Language:
+            <%=form_data.language %>
+
+        </p>
+        <p>Comment:
+            <%=form_data.comment %>
+
+        </p>
+
+        <form action="/">
+            <input id="button" type="submit" value="Go Back!">
+        </form>
+    </div>
+</body>
+
+</html>
+<style>
+    p {
+        color: blue;
+    }
+    
+    .result1 {
+        border: 1px solid black;
+        height: 400px;
+        width: 400px;
+        margin: 50px auto;
+        text-align: left;
+    }
+    
+    .th1 {
+        text-align: left;
+        width: 50%;
+    }
+    
+    h4 {
+        margin-left: 20px;
+        text-decoration: underline;
+    }
+    
+    #button {
+        display: inline-block;
+        margin-left: 20px;
+        background-color: lightblue;
+        box-shadow: 2px 1px 1px grey;
+    }
+    
+    p {
+        margin-left: 20px;
+    }
+</style>
